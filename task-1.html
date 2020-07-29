@@ -5,40 +5,38 @@
 <body>
     
     <script>
-        
-
+      
         const data = [
             {
-            name: 'Petr',
-            salary: 1200
+            name: 'Peter',
+            salary: '1200$'
             },
             {
             name: 'Ivan',
-            salary: 1150
+            salary: '1150$'
             },           
             {
             name: 'Anna',
-            salary: 990
+            salary:'990$'
             },
             {
             name: 'Eva',
-            salary: 1500
+            salary: '1500$'
             },
             {
             name : 'Innocent',
-            salary: 1700
+            salary: '1700$'
             }
         ];
-
+            
 
             let salarySum = 0;
             let salaryAverage;
-
-
+            
             /* C циклом for */
         
               for (let i = 0; i < data.length; i++) {
-                salarySum += data[i].salary;
+                salarySum += +data[i].salary.slice(0, -1);
             }
 
 
